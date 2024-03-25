@@ -3,13 +3,13 @@ package data
 import (
 	"database/sql"
 	"fmt"
+	"github.com/vatusa/training/internal/env"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
 	"os"
 	"time"
-	"vatusa-training/internal/env"
 )
 
 var DB *gorm.DB

@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/vatusa/training/internal/web"
 	"log"
-	"vatusa-training/internal/web"
 )
 
 func main() {

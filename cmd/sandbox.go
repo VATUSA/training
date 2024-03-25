@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"vatusa-training/internal/env"
+	"github.com/vatusa/training/internal/env"
 )
 
 func main() {

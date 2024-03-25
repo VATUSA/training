@@ -1,5 +1,7 @@
 package web
 
+import "github.com/vatusa/training/internal/data"
+
 type MetaData struct {
 	Facilities []data.Facility
 	Ratings    []Rating
