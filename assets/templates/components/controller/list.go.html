@@ -1,0 +1,56 @@
+<div class="container m-2">
+    <div class="row">
+        <div class="col">
+            CID
+        </div>
+        <div class="col">
+            Name
+        </div>
+        <div class="col">
+            Rating
+        </div>
+        <div class="col">
+            Facility
+        </div>
+        <div class="col">
+            Last Promotion
+        </div>
+        <div class="col">
+            Last Training Session
+        </div>
+        <div class="col">
+            Actions
+        </div>
+    </div>
+    {{range .}}
+        <div class="row">
+            <div class="col">
+                {{.CID}}
+            </div>
+            <div class="col">
+                {{.Name}}
+            </div>
+            <div class="col">
+                {{.Rating}}
+            </div>
+            <div class="col">
+                {{.Facility}}
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+                BUTTONS!
+            </div>
+        </div>
+    {{ else }}
+        <div class="row">
+            <div class="col text-center">
+                <b>No results found.</b>
+            </div>
+        </div>
+    {{ end }}
+</div>

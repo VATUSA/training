@@ -1,0 +1,47 @@
+<div id="searchbar" class="container m-2">
+    <form method="GET">
+        <div class="row">
+            <div class="col ms-2">
+                <label for="search_cid" class="form-label">
+                    CID
+                </label>
+                <input type="text" id="search_cid" name="cid" size="8" class="form-control"/>
+            </div>
+            <div class="col ms-2">
+                <label for="search_name" class="form-label">
+                    Name
+                </label>
+                <input type="text" id="search_name" name="name" class="form-control"/>
+            </div>
+            <div class="col ms-2">
+                <label for="search_facility" class="form-label">
+                    Facility
+                </label>
+                <select id="search_facility" name="facility" class="form-select">
+                    <option value="">---</option>
+                    {{ range .Facilities }}
+                        <option value="{{.}}">{{.}}</option>
+                    {{ end }}
+                </select>
+            </div>
+            <div class="col ms-2">
+                <label for="search_rating" class="form-label">
+                    Rating
+                </label>
+                <select id="search_rating" name="rating" class="form-select">
+                    <option value="">--</option>
+                    {{ range .Ratings }}
+                        <option value="{{.Int}}">{{.Short}}</option>
+                    {{ end }}
+                </select>
+            </div>
+            <div class="col ms-2">
+                <label for="search_submit" class="form-label">
+                    &nbsp;
+                </label>
+                <button id="search_submit" type="submit" class="btn btn-primary form-control">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+{{template "components/controller/list" .Controllers}}

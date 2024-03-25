@@ -1,0 +1,18 @@
+{
+  "name": "vatusa-training",
+  "version": "1.0.0",
+  "description": "VATUSA Training Platform",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/custom-bootstrap.scss assets/css/custom-bootstrap.css"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.72.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
